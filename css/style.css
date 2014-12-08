@@ -1,0 +1,182 @@
+/* PRIMARY STRUCTURE */
+
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #b4b4b4;
+  color: #787878;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background-attachment: fixed;
+
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  color: #000;
+}
+
+.title-nav-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle; 
+}
+
+#desktopNav {
+  width: 90%;
+  vertical-align: middle;
+}
+
+.headerItems{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  line-height: 1em;
+  display: block;
+}
+
+.active-link {
+  text-align: right;
+  display: inline-block;
+  margin: 0 0 0 30px;
+  text-transform: none;
+  line-height: 2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+}
+
+.active-link a {
+  text-decoration: none;
+  color: #787878;
+}
+
+/* SECTIONS */
+.module{
+  height: 100vh;
+}
+
+.rightWrapper {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.education {
+  width: 50%;
+  float: left;
+}
+#contact {
+  width: 50%; 
+  height: 50%;
+  display: block;
+  clear: both; 
+  position: absolute;
+}
+#resume {
+  width: 50%; 
+  height: 50%;
+  display: block;
+
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 25px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 300;
+}
+section.module p:last-of-type {
+  text-align: center;
+  font-size: 60px;
+}
+
+section.module.content {
+  padding: 2% 10% 2% 10%;
+  margin: 0 auto;
+}
+section.module.parallax {
+  min-height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2%;
+}
+
+section.module.parallax #name {
+  width: 65%;
+  padding: 20% 0 0 2%;
+  text-align: center;
+}
+
+section.module.title {
+  background-image: url("../images/kelsey_woodard.jpg");
+}
+section.module.billmate {
+  background-image: url("../images/billmate.png");
+}
+section.module.parallax-3 {
+  background-image: url("../images/Road_Trip.png");
+}
+
+/*MEDIA*/
+
+@media (min-width: 1120px), (min-height: 630px) {
+  body { 
+    background-size: auto; 
+  }
+}
+
+@media all and (min-width: 600px) {
+
+  section.module.title {
+    background-image: url("../images/lebanon.jpg") 50% 50% no-repeat;
+  }
+
+  section.module h2 {
+    font-size: 30px;
+    margin: 2% 0 2% 0;
+  }
+  section.module p {
+    font-size: 30px;
+  }
+  section.module.parallax h1 {
+    font-size: 50px;
+  }
+}
+
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 80px;
+    margin-top: 0;
+  }
+}
+
