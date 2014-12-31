@@ -1,6 +1,5 @@
 /* PRIMARY STRUCTURE */
 
-
 html, body {
   min-height: 100%;
   margin: 0;
@@ -18,46 +17,10 @@ html, body {
 
 }
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width:100%;
-  color: #000;
-}
+/* HEADER */
 
-.title-nav-wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
-  display: table;
-  width: 100%;
-  margin: 0 auto;
-  vertical-align: middle; 
-}
-
-#desktopNav {
-  width: 90%;
-  vertical-align: middle;
-}
-
-.headerItems{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-  line-height: 1em;
-  display: block;
-}
-
-.active-link {
-  text-align: right;
-  display: inline-block;
-  margin: 0 0 0 30px;
-  text-transform: none;
-  line-height: 2em;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 20px;
+#name h2 {
+  color: #808080;
 }
 
 .active-link a {
@@ -65,37 +28,40 @@ html, body {
   color: #787878;
 }
 
+.site-pic {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.project-box {
+  background-color: #F4F0F1;
+  border-radius: 15px;
+  border: 15px solid #24355F;
+  overflow: hidden;
+  height: 550px;
+  width: 500px;
+  padding-bottom: 30px;
+}
+
+.project-box p {
+  padding: 10px;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    width: auto;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+}
+
 /* SECTIONS */
-.module{
-  height: 100vh;
-}
 
-.rightWrapper {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-.education {
-  width: 50%;
-  float: left;
-}
-#contact {
-  width: 50%; 
-  height: 50%;
-  display: block;
-  clear: both; 
-  position: absolute;
-}
-#resume {
-  width: 50%; 
-  height: 50%;
-  display: block;
-
-}
-
-section.module:last-child {
-  margin-bottom: 0;
-}
 section.module h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 25px;
@@ -106,15 +72,15 @@ section.module p {
   font-size: 25px;
   font-weight: 300;
 }
-section.module p:last-of-type {
-  text-align: center;
-  font-size: 60px;
-}
 
 section.module.content {
-  padding: 2% 10% 2% 10%;
-  margin: 0 auto;
+  height: 100vh;
 }
+
+section.module.about {
+  background: black;
+}
+
 section.module.parallax {
   min-height: 100%;
   background-position: 50% 50%;
@@ -139,15 +105,16 @@ section.module.parallax #name {
 
 section.module.title {
   background-image: url("../images/kelsey_woodard.jpg");
-}
-section.module.billmate {
-  background-image: url("../images/billmate.png");
-}
-section.module.parallax-3 {
-  background-image: url("../images/Road_Trip.png");
+  height: 100vh;
 }
 
-/*MEDIA*/
+section.module.parallax-3 {
+  background-image: url("../images/constituent_connect.png");
+  border-top: solid gray 20px;
+  border-bottom: solid gray 20px;
+}
+
+/* ===== MEDIA ===== */
 
 @media (min-width: 1120px), (min-height: 630px) {
   body { 
