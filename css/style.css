@@ -40,8 +40,8 @@ html, body {
   border-radius: 15px;
   border: 15px solid #24355F;
   overflow: hidden;
-  height: 550px;
-  width: 500px;
+  font-size: 10px;
+  height: 75vh;
   padding-bottom: 30px;
 }
 
@@ -60,6 +60,10 @@ hr.style-one {
     background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
 }
 
+ul.find-me-list {
+  padding: 30px;
+}
+
 /* SECTIONS */
 
 section.module h2 {
@@ -68,7 +72,7 @@ section.module h2 {
 }
 
 section.module p {
-  margin-bottom: 40px;
+
   font-size: 25px;
   font-weight: 300;
 }
@@ -78,7 +82,7 @@ section.module.content {
 }
 
 section.module.about {
-  background: black;
+  background-image: url("../images/kelsey_woodard.jpg");
 }
 
 section.module.parallax {
@@ -133,7 +137,7 @@ section.module.parallax-3 {
     margin: 2% 0 2% 0;
   }
   section.module p {
-    font-size: 30px;
+    font-size: 20px;
   }
   section.module.parallax h1 {
     font-size: 50px;
