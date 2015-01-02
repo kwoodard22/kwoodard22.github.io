@@ -23,9 +23,9 @@ html, body {
   color: #808080;
 }
 
-.active-link a {
-  text-decoration: none;
-  color: #787878;
+
+.link {
+  font-size: 20px;
 }
 
 .site-pic {
@@ -60,6 +60,43 @@ hr.style-one {
     background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
 }
 
+hr.style-two {
+  border: 0;
+  height: 1px;
+  width: auto;
+  background: #d6d6d6;
+  background-image: -webkit-linear-gradient(left, #24355F, #d6d6d6, #24355F); 
+  background-image:    -moz-linear-gradient(left, #24355F, #d6d6d6, #24355F); 
+  background-image:     -ms-linear-gradient(left, #24355F, #d6d6d6, #24355F); 
+  background-image:      -o-linear-gradient(left, #24355F, #d6d6d6, #24355F); 
+}
+
+.about-box {
+  color: white;
+}
+
+#about-me {
+  text-align: center;
+}
+
+.fa:hover {
+    color: #24355F;
+}
+
+#quote {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #000;
+}
+
 ul.find-me-list {
   padding: 30px;
 }
@@ -69,6 +106,11 @@ ul.find-me-list {
 section.module h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 25px;
+  padding-top: 50px;
+}
+
+section.module.parallax.title h2 {
+  padding-top: 20px;
 }
 
 section.module p {
@@ -81,8 +123,8 @@ section.module.content {
   height: 100vh;
 }
 
-section.module.about {
-  background-image: url("../images/kelsey_woodard.jpg");
+section.contact {
+  height: 70vh;
 }
 
 section.module.parallax {
@@ -112,10 +154,9 @@ section.module.title {
   height: 100vh;
 }
 
-section.module.parallax-3 {
-  background-image: url("../images/constituent_connect.png");
-  border-top: solid gray 20px;
-  border-bottom: solid gray 20px;
+section.about {
+  background: #24355F;
+  height: 50vh;
 }
 
 /* ===== MEDIA ===== */

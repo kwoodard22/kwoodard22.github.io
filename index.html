@@ -8,35 +8,35 @@
     -->
     <title>Kelsey Woodard</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Header nav bar -->
-    <nav class="avbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <ul class="active-link list-inline">
-            <li>
-              <a href="#about-me">
-                <span>About Me</span>
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio">
-                <span>Portfolio</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-header page-scroll">
+        <ul class="list-inline">
+          <li class="link">
+            <a href="#about-me">
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="link">
+            <a href="#portfolio">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li class="link">
+            <a href="#contact">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
         </div>
-      </div>
     </nav>
     <!-- TITLE PAGE -->
     <section class="module parallax title">
@@ -60,10 +60,10 @@
             <a target="_blank" href="https://billmate.herokuapp.com/" title="BillMate">
               <img class="site-pic" src="images/billmate.png">
             </a>
-            <p><strong>Billmate</strong> allows roommates to easily split monthly house expenses. This was my first project in WDI, and the technologies used were Ruby, Rails, and the Devise Gem.</p>
-            <div class="btn-group">
+            <p><strong>Billmate</strong> allows roommates to easily split monthly house expenses. This was my first project in my Web Development Immersive program, and the technologies used were Ruby, Rails, and the Devise Gem.</p>
+            <div class="wrapper text-center">
               <a target="_blank" href="https://github.com/kwoodard22/BillMate">
-                <button type="button" class="btn btn-default btn-lg">
+              <button type="button" class="btn btn-default btn-lg">
                 <i class="fa fa-1x fa-github"></i>
                 GitHub
                 </button>
@@ -83,17 +83,21 @@
             <a target="_blank" href="https://state-capital-road-trip.herokuapp.com/" title="Road Trip">
               <img class="site-pic" src="images/road-trip.png">
             </a>
-            <p><strong>Road Trip</strong> is an educational game that allows players to test their knowledge of state capitals on a trip across the US. This app was a result of a four person group project.</p>
-            <div class="btn-group">
+            <p><strong>Road Trip</strong> is an educational game that allows players to test their knowledge of state capitals on a trip across the US. This app was a result of a four person group project and used Rails, JavaScript, and jQuery. </p>
+            <div class="wrapper text-center">
+              <a target="_blank" href="https://github.com/kwoodard22/road_trip">
               <button type="button" class="btn btn-default btn-lg">
               <i class="fa fa-1x fa-github"></i>
               GitHub
               </button>
+            </a>
+            <a target="_blank" href="https://state-capital-road-trip.herokuapp.com/">
               <button type="button" class="btn btn-default btn-lg">
               <i class="fa fa-1x fa-external-link-square">
               Road Trip
               </i>
               </button>
+            </a>
             </div>
           </div>
         </div>
@@ -102,40 +106,44 @@
             <a target="_blank" href="https://constituent-connect.herokuapp.com/" title="Constituent Connect">
               <img class="site-pic" src="images/constituent_connect.png">
             </a>
-            <p><strong>Constituent Connect</strong> seeks to remedy the problem of lost caller data in congressional offices by providing a dashboard to record calls, search bills, collect caller details, and display call data in a chart. This was my final class project.</p>
+            <p><strong>Constituent Connect</strong> seeks to remedy the problem of lost caller data in congressional offices by providing a dashboard to record calls, search bills, and display call data in a chart. This was my final class project, and it uses Rails, Angular.js, and JavaScript.</p>
             
-            <div class="btn-group">
+            <div class="wrapper text-center">
+              <a target="_blank" href="https://github.com/kwoodard22/constituent_connect">
               <button type="button" class="btn btn-default btn-lg">
               <i class="fa fa-1x fa-github"></i>
               GitHub
               </button>
+            </a>
+              <a target="_blank" href="https://constituent-connect.herokuapp.com/">
               <button type="button" class="btn btn-default btn-lg">
               <i class="fa fa-1x fa-external-link-square">
               Constituent Connect
               </i>
               </button>
+            </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- ABOUT ME -->
     <section class="module about">
-      <div class="col-md-12">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 about-box">
         <div id="about-me">
-          <div class="container text-center">
-            <h2>ABOUT ME</h2>
-            <hr class="style-one">
-          </div>
+          <h2>ABOUT ME</h2>
+          <hr class="style-two">
         </div>
-      </div>
-      <div class="col-md-12">
-        <p>I recently completed a twelve week <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> (WDI) at General Assembly. During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. I'm currently looking to join an organization that places emphasis on collaboration, creativity, and making a social impact.</p>
+        <p>I recently completed a twelve week <a href="https://generalassemb.ly/education/web-development-immersive">web development course</a> at General Assembly. During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. I'm currently looking to join an organization that places emphasis on collaboration, creativity, and making a social impact.</p>
       </div>
     </section>
+
     <!-- CONTACT -->
-    <section class="module parallax content">
-      <div class="col-md-12 text-center">
+    <section class="module parallax contact">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center">
         <div id="contact">
           <h2>FIND ME</h2>
           <hr class="style-one">
@@ -144,7 +152,7 @@
               <a href="http://www.github.com/kwoodard22" target="_blank"><i class="fa fa-github fa-3x"></i><p>GitHub</p></a>
             </li>
             <li>
-              <a href="https://alumni.generalassemb.ly/kelsey-woodard" target="_blank"><i class="fa fa-cog fa-3x" target="_blank"></i><p>GA</p></a>
+              <a href="https://alumni.generalassemb.ly/kelsey-woodard" target="_blank"><i class="fa fa-cog fa-3x" target="_blank"></i><p>GA Profile</p></a>
             </li>
             <li>
               <a href="http://www.twitter.com/KelseyMWoodard" target="_blank"><i class="fa fa-twitter fa-3x"></i><p>Twitter</p></a>
@@ -156,14 +164,16 @@
               <a target="_blank" href="mailto:kwoodard22@gmail.com"><i class="fa fa-envelope fa-3x"></i><p>Email</p></a>
             </li>
             <li>
-              <a href="./assets/Resume.pdf" target="_blank"><i class="fa fa-file-text fa-3x" target="_blank"></i><p>Resume</p></a>
+              <a href="./assets/KWoodard_Resume" target="_blank"><i class="fa fa-file-text fa-3x" target="_blank"></i><p>Resume</p></a>
             </li>
           </ul>
+          <blockquote id="quote">Far better is it to dare mighty things, to win glorius triumphs, even though checkered by failure...than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.
+          <footer><cite>Theodore Roosevelt</cite></footer>
+          </blockquote>  
         </div>
       </div>
-    </div>
-  </section>
-  <script src="js/jquery.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</body>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </body>
 </html>
