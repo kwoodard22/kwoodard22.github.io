@@ -1,123 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <!--   
+  <head>
+    <!--
     Far better is it to dare mighty things, to win glorius triumphs,
     even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.
-         — Theodore Roosevelt 
-  -->
-
-  <title>Kelsey Woodard</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="animate.min.css">
-  <link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-</head>
-
-<body>
-
-  <header id ="header">
-    <div class="title-nav-wrapper">
-      <div id="desktopNav">
-        <ul class="headerItems">
-          <li class="active-link">
-            <a href="/">
-              <span>About</span>
-            <a>
+    — Theodore Roosevelt
+    -->
+    <title>Kelsey Woodard</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Header nav bar -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-header page-scroll">
+        <ul class="list-inline">
+          <li class="link">
+            <a href="#about-me">
+              <span>About Me</span>
+            </a>
           </li>
-          <li class="active-link">
-            <a href="/">
-              <span>Work</span>
-            <a>
+          <li class="link">
+            <a href="#portfolio">
+              <span>Portfolio</span>
+            </a>
           </li>
-          <li class="active-link">
-            <a href="/">
+          <li class="link">
+            <a href="#contact">
               <span>Contact</span>
-            <a>
+            </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </header>
-
-  <section class="module parallax title">
-    <div id="name">
+        </div>
+    </nav>
+    <!-- TITLE PAGE -->
+    <section class="module parallax title">
+      <div id="name">
         <h1>KELSEY WOODARD</h1>
-        <h2>Full Stack Developer in Washington, D.C.</h2></br></br>
-        <p><strong>&#8681;</strong></p>
-    </div>
-  </section>
-
-  <section class="module content">
-    <div class="container">
-      <h2>Hi, welcome to my site.</h2>
-      <p>I'm currently a student at General Assembly, nearing the end of my time in their rigorous twelve week <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> (WDI). During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. Upon completing WDI, I'm looking to join an organization that places emphasis on collaboration, creativity, and making a social impact.</p>
-      <p><strong>Check out my first class project below called <a href="https://billmate.herokuapp.com/">Billmate</a></strong>. It allows roommates to easily split house expenses. To see the code on GitHub, click <a href="https://github.com/kwoodard22/BillMate">here</a>. </p>
-      <p><strong>&#8681;</strong></p>
-    </div>
-  </section>
-
-  <a target="_blank" href="https://billmate.herokuapp.com/" title="BillMate">
-    <section class="module parallax billmate">
-      <!-- I removed container div -->
+        <h2>Full Stack Developer in Washington, D.C.</h2>
+      </div>
     </section>
-  </a>
-
-  <section class="module content">
-    <div class="container">
-      <h2>Another project I'm proud of</h2>
-      <p>Below is my final class project.</p>
-      <p> While in WDI, I also had the opportunity to collaborate with a team on <a href="https://still-harbor-2428.herokuapp.com/">Road Trip</a>. It's a gamified learning app, testing users’ knowledge of U.S. state capitals. The goal of this project was to hone our newly aquired JavaScript and Ajax skills.</p>
-      <p><strong>&#8681;</strong></p> 
-    </div>
-  </section>
-
-  <section class="module parallax parallax-3">
     
-  </section>
+    <!-- PORTFOLIO -->
+    <section class="module content">
+      <div id="portfolio">
+        <div class="col-md-12">
+          <div class="container text-center">
+            <h2>PORTFOLIO</h2>
+            <hr class="style-one">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-box center-block">
+            <a target="_blank" href="https://billmate.herokuapp.com/" title="BillMate">
+              <img class="site-pic" src="images/billmate.png">
+            </a>
+            <p><strong>Billmate</strong> allows roommates to easily split monthly house expenses. This was my first project in my Web Development Immersive program, and the technologies used were Ruby, Rails, and the Devise Gem.</p>
+            <div class="wrapper text-center">
+              <a target="_blank" href="https://github.com/kwoodard22/BillMate">
+              <button type="button" class="btn btn-default btn-lg">
+                <i class="fa fa-1x fa-github"></i>
+                GitHub
+                </button>
+              </a>
+              <a target="_blank" href="https://billmate.herokuapp.com/">
+                <button type="button" class="btn btn-default btn-lg">
+                <i class="fa fa-1x fa-external-link-square">
+                BillMate
+                </i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-box center-block">
+            <a target="_blank" href="https://state-capital-road-trip.herokuapp.com/" title="Road Trip">
+              <img class="site-pic" src="images/road-trip.png">
+            </a>
+            <p><strong>Road Trip</strong> is an educational game that allows players to test their knowledge of state capitals on a trip across the US. This app was a result of a four person group project and used Rails, JavaScript, and jQuery. </p>
+            <div class="wrapper text-center">
+              <a target="_blank" href="https://github.com/kwoodard22/road_trip">
+              <button type="button" class="btn btn-default btn-lg">
+              <i class="fa fa-1x fa-github"></i>
+              GitHub
+              </button>
+            </a>
+            <a target="_blank" href="https://state-capital-road-trip.herokuapp.com/">
+              <button type="button" class="btn btn-default btn-lg">
+              <i class="fa fa-1x fa-external-link-square">
+              Road Trip
+              </i>
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-box">
+            <a target="_blank" href="https://constituent-connect.herokuapp.com/" title="Constituent Connect">
+              <img class="site-pic" src="images/constituent_connect.png">
+            </a>
+            <p><strong>Constituent Connect</strong> seeks to remedy the problem of lost caller data in congressional offices by providing a dashboard to record calls, search bills, and display call data in a chart. This was my final class project, and it uses Rails, Angular.js, and JavaScript.</p>
+            
+            <div class="wrapper text-center">
+              <a target="_blank" href="https://github.com/kwoodard22/constituent_connect">
+              <button type="button" class="btn btn-default btn-lg">
+              <i class="fa fa-1x fa-github"></i>
+              GitHub
+              </button>
+            </a>
+              <a target="_blank" href="https://constituent-connect.herokuapp.com/">
+              <button type="button" class="btn btn-default btn-lg">
+              <i class="fa fa-1x fa-external-link-square">
+              Constituent Connect
+              </i>
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="module content">
-    <div class="container">
-      
-        <div class="education">
-          <h2>EDUCATION</h2>
-          <ul>
+    <!-- ABOUT ME -->
+    <section class="module about">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 about-box">
+        <div id="about-me">
+          <h2>ABOUT ME</h2>
+          <hr class="style-two">
+        </div>
+        <p>I recently completed a twelve week <a href="https://generalassemb.ly/education/web-development-immersive">web development course</a> at General Assembly. During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. I'm currently looking to join an organization that places emphasis on collaboration, creativity, and making a social impact.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="module parallax contact">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center">
+        <div id="contact">
+          <h2>FIND ME</h2>
+          <hr class="style-one">
+          <ul class="list-inline find-me-list">
             <li>
-              <h3>General Assembly</h3>
-              Web Development Immersive, December 2014
+              <a href="http://www.github.com/kwoodard22" target="_blank"><i class="fa fa-github fa-3x"></i><p>GitHub</p></a>
             </li>
             <li>
-              <h3>Fulbright Fellowship in Amman, Jordan</h3>
-              Arabic, August 2011 - May 2012
+              <a href="https://alumni.generalassemb.ly/kelsey-woodard" target="_blank"><i class="fa fa-cog fa-3x" target="_blank"></i><p>GA Profile</p></a>
             </li>
             <li>
-              <h3>University of California, San Diego</h3>
-              International Relations, June 2010
+              <a href="http://www.twitter.com/KelseyMWoodard" target="_blank"><i class="fa fa-twitter fa-3x"></i><p>Twitter</p></a>
             </li>
             <li>
-              <h3>American University of Cairo</h3>
-              Arabic, August 2008 - June 2009
+              <a href="http://www.linkedin.com/in/kelseywoodard" target="_blank"><i class="fa fa-linkedin fa-3x"></i><p>LinkedIn</p></a>
+            </li>
+            <li>
+              <a target="_blank" href="mailto:kwoodard22@gmail.com"><i class="fa fa-envelope fa-3x"></i><p>Email</p></a>
+            </li>
+            <li>
+              <a href="./assets/KWoodard_Resume" target="_blank"><i class="fa fa-file-text fa-3x" target="_blank"></i><p>Resume</p></a>
             </li>
           </ul>
+          <blockquote id="quote">Far better is it to dare mighty things, to win glorius triumphs, even though checkered by failure...than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.
+          <footer><cite>Theodore Roosevelt</cite></footer>
+          </blockquote>  
         </div>
-        <div class="rightWrapper">
-          <div id="resume">
-            <a href="./assets/TEST.pdf" target="_blank">See my Resume</a>
-          </div>
-          <div id="contact">
-            <h2>CONTACT ME</h2>
-          </div>
-        </div>
-    
-    </div>
-  </section>
-
-
-
-  <script src="js/jquery.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</body>
+      </div>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </body>
 </html>
