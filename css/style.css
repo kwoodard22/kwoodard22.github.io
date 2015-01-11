@@ -42,6 +42,7 @@ html, body {
   font-size: 10px;
   height: auto;
   padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .project-box p {
@@ -121,14 +122,18 @@ section.module p {
 section.content {
   height: 100%;
   background: white;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 section.contact {
-  height: 70vh;
+  overflow: hidden;
 }
 
 section.about {
   background: #24355F;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 /* TITLE PAGE  */
@@ -156,7 +161,7 @@ section.module.parallax #name {
 }
 
 section.module.title {
-  background-image: url("../images/kelsey_woodard.jpg");
+  background-image: url("../images/kelsey_woodard2.jpg");
   height: 100vh;
 }
 
