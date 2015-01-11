@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/base.css">
+      <!-- <link rel="stylesheet" href="css/base.css"> -->
       <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -18,35 +18,35 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
       <!-- Header nav bar -->
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-              <img src="images/KW.png" alt="Initial">
-            </a>
-          </div>
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              <li class="hidden">
-                <a class="page-scroll" href="#page-top"></a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#about-me">About</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contact">
-                  <span>Contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">
+            <img src="images/KW.png" alt="Initial">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about-me">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- TITLE PAGE -->
       <section class="module parallax title">
@@ -70,7 +70,7 @@
               <a target="_blank" href="https://billmate.herokuapp.com/" title="BillMate">
                 <img class="site-pic" src="images/billmate.png">
               </a>
-              <p><strong>Billmate</strong> allows roommates to easily split monthly house expenses. This was my first project in my Web Development Immersive program, and the technologies used were Ruby, Rails, and the Devise Gem.</p>
+              <p><strong>Billmate</strong> allows roommates to easily split monthly house expenses. This was my first project in my Web Development Immersive program. The technologies used were Ruby, Rails, and Authentication using Devise.</p>
               <div class="wrapper text-center">
                 <a target="_blank" href="https://github.com/kwoodard22/BillMate">
                   <button type="button" class="btn btn-default btn-lg">
@@ -139,19 +139,21 @@
       </section>
       <!-- ABOUT ME -->
       <section class="module about">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 about-box">
-          <div id="about-me">
-            <h2>ABOUT ME</h2>
-            <hr class="style-two">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="about-box">
+              <div id="about-me">
+                <h2>ABOUT ME</h2>
+                <hr class="style-two">
+              </div>
+              <p>I recently completed a twelve week <a href="https://generalassemb.ly/education/web-development-immersive">web development course</a> at General Assembly. During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. I'm currently looking to join an organization that places emphasis on collaboration, creativity, and continued learning.</p>
+            </div>
           </div>
-          <p>I recently completed a twelve week <a href="https://generalassemb.ly/education/web-development-immersive">web development course</a> at General Assembly. During the course of this program, I've learned <strong>Ruby on Rails</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Backbone.js</strong>, <strong>test driven development</strong>, <strong>HTML5</strong>, and <strong>CSS</strong>. I'm currently looking to join an organization that places emphasis on collaboration, creativity, and making a social impact.</p>
         </div>
       </section>
       <!-- CONTACT -->
-      <section class="module parallax contact">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 text-center">
+      <section class="module contact">
+        <div class="col-md-8 col-md-offset-2 text-center">
           <div id="contact">
             <h2>FIND ME</h2>
             <hr class="style-one">
@@ -177,11 +179,10 @@
             </ul>
             <blockquote id="quote">Far better is it to dare mighty things, to win glorius triumphs, even though checkered by failure...than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.
             <footer><cite>Theodore Roosevelt</cite></footer>
-          </blockquote>
+            </blockquote>
+          </div>
         </div>
-      </div>
-    </section>
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      </section>
+    
   </body>
 </html>
